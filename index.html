@@ -1,42 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <!-- Tailwind CDN -->
-      <script src="https://cdn.tailwindcss.com"></script>
-    <title>Riot Games</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Riot Games</title>
 </head>
-<body class="bg-[url('/img/background.png')]">
 
-    <!-- o tailwind permite alterar o tamanho do width com a porcentagem entre couchetes -->
-    <header class="flex w-[90%] mx-auto gap-x-10 mt-6"> 
-        <img src="./img/riotGames-logo.svg" alt="Logo da RIot Games">
-        <menu class="flex  gap-x-4">
+<body class="bg-[url('/img/background.png')] bg-cover bg-center min-h-screen overflow-hidden"> <!-- bg é background -->
+
+  <!-- HEADER -->
+  <header
+    class="w-[90%] mx-auto mt-6 bg-black/50 backdrop-blur-md rounded-lg flex items-center justify-between px-6 py-3 text-white">
+
+    <!-- Logo -->
+    <div class="flex items-center gap-2">
+      <img src="./img/riotGames-logo.svg" alt="Logo da Riot Games" class="h-6">
+    </div>
+
+    <!-- Menu -->
+    <menu>
+      <ul class="flex items-center gap-4 text-sm font-medium ">
         <li>
-            <a href="#">STORE</a>
-        </li>
-        <li>
-            <a href="#">STORE</a>
-        </li>
-        <li>
-            <a href="#">CHAMPION</a>
-        </li>
-        <li>
-            <a href="#">ABOUT</a>
-        </li>
-        <li>
-            <a href="#">BLOG</a>
+          <a href="#" class="px-3 py-1 rounded hover:bg-[#1c1c1f] text-white transition-all duration-200">HOME</a>
         </li>
 
         <li>
-
+          <a href="#"
+            class="px-3 py-1 rounded hover:bg-[#1c1c1f] text-gray-300 hover:text-white transition-all duration-500">STORE</a>
         </li>
+
+        <li>
+          <a href="#"
+            class="px-3 py-1 rounded hover:bg-[#1c1c1f] text-gray-300 hover:text-white transition-all duration-500">CHAMPION</a>
+        </li>
+
+        <li>
+          <a href="#"
+            class="px-3 py-1 rounded hover:bg-[#1c1c1f] text-gray-300 hover:text-white transition-all duration-500">ABOUT</a>
+        </li>
+        <li><a href="#"
+            class="px-3 py-1 rounded hover:bg-[#1c1c1f] text-gray-300 hover:text-white transition-all duration-500">BLOG</a>
+        </li>
+
+            <!-- barra de procurar e sacola/carrinho -->
+    <div class="flex items-center gap-4">
+      <div class="bg-gray-800 px-3 py-1 rounded-md flex items-center gap-2">
+        <img src="./img/lupaDePesquisa.svg" alt="Pesquisar" class="h-4 opacity-80">
+        <input type="text" placeholder="Search"
+          class="bg-transparent text-sm placeholder-gray-400 outline-none text-white w-60">
+      </div>
+      <img src="./img/sacolinha.svg" alt="Carrinho" class="h-6">
+    </div>
+      </ul>
     </menu>
-    </header>
-    <main></main>
-    <footer></footer>
-    
+
+
+  </header>
+
+  <main>
+    <img src="" alt="" class="bg-cover bg-center min-h-screen overflow-hidden">
+  </main>
+
+  <footer></footer>
+
 </body>
+
 </html>
