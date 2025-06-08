@@ -21,7 +21,7 @@
 
   <!-- HEADER -->
   <header
-    class="w-[90%] mx-auto mt-6 bg-black/50 backdrop-blur-md rounded-lg flex items-center justify-between px-6 py-3 text-white">
+    class="w-[90%] mx-auto mt-6 bg-black/30 backdrop-blur-md rounded-lg flex items-center justify-between px-6 py-3 text-white">
 
     <!-- Logo -->
     <div class="flex items-center gap-2">
@@ -32,51 +32,75 @@
     <menu>
       <ul class="flex items-center gap-4 text-sm font-medium ">
         <li>
-          <a href="#"
-           class="px-3 py-1 rounded hover:bg-[#1c1c1f] text-white transition-all duration-200">HOME</a>
+          <a href="#" class="px-3 py-1 rounded hover:bg-[#1c1c1f] text-white transition-all duration-200">HOME</a>
         </li>
 
         <li>
-          <a href="#"
-            class="px-3 py-1 rounded hover:bg-[#1c1c1f] text-gray-300 hover:text-white transition-all duration-500">STORE</a>
+          <a href="#" class="px-3 py-1 rounded hover:bg-[#1c1c1f] text-white transition-all duration-500">STORE</a>
         </li>
 
         <li>
-          <a href="#"
-            class="px-3 py-1 rounded hover:bg-[#1c1c1f] text-gray-300 hover:text-white transition-all duration-500">CHAMPION</a>
+          <a href="#" class="px-3 py-1 rounded hover:bg-[#1c1c1f] text-white transition-all duration-500">CHAMPION</a>
         </li>
 
         <li>
-          <a href="#"
-            class="px-3 py-1 rounded hover:bg-[#1c1c1f] text-gray-300 hover:text-white transition-all duration-500">ABOUT</a>
+          <a href="#" class="px-3 py-1 rounded hover:bg-[#1c1c1f] text-white transition-all duration-500">ABOUT</a>
         </li>
-        <li><a href="#"
-            class="px-3 py-1 rounded hover:bg-[#1c1c1f] text-gray-300 hover:text-white transition-all duration-500">BLOG</a>
+        <li><a href="#" class="px-3 py-1 rounded hover:bg-[#1c1c1f] text-white transition-all duration-500">BLOG</a>
         </li>
 
-            <!-- barra de procurar e sacola/carrinho -->
-    <div class="flex items-center gap-4">
-      <div class="bg-gray-800 px-3 py-1 rounded-md flex items-center gap-2 ">
-        <img src="./img/lupaDePesquisa.svg" alt="Pesquisar" class="h-4 opacity-80">
-        <input type="text" placeholder="Search"
-          class="bg-transparent text-sm placeholder-gray-400 outline-none text-white w-60">
-      </div>
-      <img src="./img/sacolinha.svg" alt="Carrinho" class="h-6">
-    </div>
+        <!-- barra de procurar e sacola/carrinho -->
+        <div class="flex items-center gap-4">
+          <div class="bg-[#D9D9D9]/10 to-transparent px-3 py-1 rounded-md flex items-center gap-2 ">
+            <img src="./img/lupaDePesquisa.svg" alt="Pesquisar" class="h-4 opacity-80">
+            <input type="text" placeholder="Search"
+              class="bg-transparent text-sm placeholder-gray-400 outline-none text-white w-60">
+          </div>
+          <img src="./img/sacolinha.svg" alt="Carrinho" class="h-6">
+        </div>
       </ul>
     </menu>
 
   </header>
 
-<main class="relative w-full h-screen">
-  <!-- Textos lado a lado -->
-  <div class="absolute top-[15%] left-[25%] flex items-end gap-40 text-white -z-20">
-    <h2 class="text-4xl">THE UNFORGIVEN</h2>
-    <h1 class="text-8xl">YASUO</h1>
+  <main class="relative w-full min-h-screen px-4 pt-24 text-white flex flex-col items-center">
+  
+  <!-- Título e nome do campeão -->
+  <div class="flex flex-row gap-10 md:gap-40 items-center justify-center w-full max-w-6xl px-4 -z-20">
+    <h2 class="text-2xl md:text-4xl font-bold">THE UNFORGIVEN</h2>
+    <h1 class="text-5xl md:text-8xl font-bold">YASUO</h1>
   </div>
+
+  <!-- Japonês vertical -->
+  <div class="mt-10 md:absolute md:left-[10%] md:top-[30%] flex flex-col items-center gap-0">
+    <span class="text-5xl md:text-7xl font-bold">ヤ</span>
+    <span class="text-5xl md:text-7xl font-bold">ス</span>
+    <span class="text-5xl md:text-7xl font-bold">オ</span>
+  </div>
+
+  <!-- Informações de papel e dificuldade -->
+  <div class="mt-10 md:absolute md:right-[10%] md:top-[35%] flex flex-col gap-8 text-black items-center">
+    <!-- Role -->
+    <div class="flex flex-col items-center text-center">
+      <img src="./img/role-icon.svg" alt="Ícone de Role" class="w-10 h-10 mb-1">
+      <span class="text-base font-bold">Role</span>
+      <span class="text-sm font-normal">Fighter</span>
+    </div>
+
+    <!-- Difficulty -->
+    <div class="flex flex-col items-center text-center">
+      <img src="./img/difficulty-icon.svg" alt="Ícone de Dificuldade" class="w-10 h-10 mb-1">
+      <span class="text-base font-bold">Difficulty</span>
+      <span class="text-sm font-normal">High</span>
+    </div>
+  </div>
+
 </main>
 
-  <footer></footer>
+<!-- Botão -->
+<footer class="relative flex justify-center items-center mt-10 md:absolute md:bottom-20 md:left-1/2 md:transform md:-translate-x-1/2 z-10">
+  <img src="./img/button.svg" alt="botão" class="cursor-pointer">
+</footer>
 
 </body>
 
