@@ -10,7 +10,14 @@
   <title>Riot Games</title>
 </head>
 
-<body class="bg-[url('/img/background.png')] bg-cover bg-center min-h-screen overflow-hidden"> <!-- bg é background -->
+<body class="relative bg-[url('/img/background.png')] bg-cover bg-no-repeat bg-center min-h-screen overflow-hidden">
+
+  <!-- Gradientes -->
+  <div class="fixed inset-0 bg-gradient-to-t from-[#F8F8AF]/100 to-transparent -z-50"></div>
+  <div class="fixed inset-0 bg-gradient-to-b from-[#000000]/25 to-transparent -z-50"></div>
+
+  <!-- png yasuo -->
+  <img src="./img/yasuoPNG.svg" alt="Yasuo" class="absolute top-0 left-0 w-full h-auto max-h-screen object-cover -z-10">
 
   <!-- HEADER -->
   <header
@@ -25,7 +32,8 @@
     <menu>
       <ul class="flex items-center gap-4 text-sm font-medium ">
         <li>
-          <a href="#" class="px-3 py-1 rounded hover:bg-[#1c1c1f] text-white transition-all duration-200">HOME</a>
+          <a href="#"
+           class="px-3 py-1 rounded hover:bg-[#1c1c1f] text-white transition-all duration-200">HOME</a>
         </li>
 
         <li>
@@ -48,7 +56,7 @@
 
             <!-- barra de procurar e sacola/carrinho -->
     <div class="flex items-center gap-4">
-      <div class="bg-gray-800 px-3 py-1 rounded-md flex items-center gap-2">
+      <div class="bg-gray-800 px-3 py-1 rounded-md flex items-center gap-2 ">
         <img src="./img/lupaDePesquisa.svg" alt="Pesquisar" class="h-4 opacity-80">
         <input type="text" placeholder="Search"
           class="bg-transparent text-sm placeholder-gray-400 outline-none text-white w-60">
@@ -58,12 +66,15 @@
       </ul>
     </menu>
 
-
   </header>
 
-  <main>
-    <img src="" alt="" class="bg-cover bg-center min-h-screen overflow-hidden">
-  </main>
+<main class="relative w-full h-screen">
+  <!-- Textos lado a lado -->
+  <div class="absolute top-[15%] left-[25%] flex items-end gap-40 text-white -z-20">
+    <h2 class="text-4xl">THE UNFORGIVEN</h2>
+    <h1 class="text-8xl">YASUO</h1>
+  </div>
+</main>
 
   <footer></footer>
 

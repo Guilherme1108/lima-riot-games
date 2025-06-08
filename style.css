@@ -3,3 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+@font-face {
+  font-family: 'Beaufort LoL Heavy';
+  src: url('fonts/BeaufortforLOL-Heavy.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+main {
+  font-family: 'Beaufort LoL Heavy', serif;
+}
