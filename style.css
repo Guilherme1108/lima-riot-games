@@ -14,6 +14,28 @@
   url("https://db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.svg#Beaufort for LOL Bold")format("svg");
 }
 
+header {
+     overflow: hidden;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 2px; /* espessura da borda */
+  background: linear-gradient(to bottom, #000000, #E2E2E2); /* vertical */
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+          mask-composite: exclude;
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  border-radius: 0.5rem;
+}
+
+
 main {
   font-family: "Beaufort for LOL Bold";
 }
