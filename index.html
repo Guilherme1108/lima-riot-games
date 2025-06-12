@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Monda:wght@400;700&display=swap" rel="stylesheet">
   <title>Riot Games</title>
 </head>
 
@@ -75,7 +76,7 @@
   <main class="relative w-full min-h-screen px-4 pt-24 text-white flex flex-col items-center">
 
     <!-- nome do champion -->
-    <div class="flex flex-row gap-[300px] items-center justify-center w-full max-w-6xl px-4 z-10 lg:-z-20">
+    <div class="flex flex-row gap-[300px] items-center justify-center w-full max-w-6xl px-4 z-10 lg:-z-20 font-lol">
       <h2 class="hidden lg:block text-2xl md:text-4xl font-bold">THE UNFORGIVEN</h2>
       <h1 class="absolute bottom-[25%] md:relative text-6xl md:text-8xl font-bold">YASUO</h1>
     </div>
@@ -88,14 +89,14 @@
     </div>
 
     <!-- Frase -->
-    <div class="mt-10 md:absolute left-[10%] top-[70%] lg:left-[50%] lg:top-[20%] flex flex-col items-center gap-0">
-      <p class="hidden md:block text-2xl font-bold">— "Death is like the wind—always by my side."</p>
+    <div class="mt-10 md:absolute left-[10%] top-[70%] lg:left-[50%] lg:top-[20%] flex flex-col items-center gap-0 monda">
+      <p class="hidden md:block text-2xl">— "Death is like the wind—always by my side."</p>
     </div>
 
     <!-- Rota e dificuldade -->
     <div class="mt-10 absolute right-[0%] top-[0%] md:right-[10%] md:top-[35%] flex flex-col gap-8 text-white xl:text-black items-center">
       <!-- Role -->
-      <div class="flex flex-col items-center text-center">
+      <div class="flex flex-col items-center text-center monda">
         <img src="./img/role-icon-branco.svg" alt="Ícone de Role" class="w-20 h-20 mb-1 xl:hidden">
         <img src="./img/role-icon.svg" alt="icone da rota" class="hidden xl:block w-10 h-10 mb-1">
         <span class="text-4xl xl:text-base font-bold">Role</span>
@@ -103,7 +104,7 @@
       </div>
 
       <!-- Difficulty -->
-      <div class="flex flex-col items-center text-center">
+      <div class="flex flex-col items-center text-center monda">
         <img src="./img/difficulty-icon-branco.svg" alt="Ícone de Dificuldade" class="w-20 h-20 mb-1 xl:hidden">
         <img src="./img/difficulty-icon.svg" alt="icone de dificuldade" class="hidden xl:block w-10 h-10 mb-1">
         <span class="text-4xl xl:text-base font-bold">Difficulty</span>

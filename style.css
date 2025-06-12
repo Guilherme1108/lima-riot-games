@@ -5,7 +5,7 @@
 }
 
 @font-face {
-  font-family: "Beaufort for LOL Bold";
+  font-family: "Beaufort for LOL Bold"; /* vários links para ser compativel em vários navegadores diferentes */
   src: url("https://db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.eot");
   src: url("https://db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.eot?#iefix")format("embedded-opentype"),
   url("https://db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.woff2")format("woff2"),
@@ -15,27 +15,29 @@
 }
 
 header {
-     overflow: hidden;
+  overflow: hidden;
+  font-family: 'Monda', sans-serif;
 }
 
-header::before {
-  content: '';
+header::before { /* cria um pseudo elemento */
+  content: ''; /* define que o elemnto não tem nada */
   position: absolute;
-  inset: 0;
-  padding: 2px; /* espessura da borda */
-  background: linear-gradient(to bottom, #000000, #E2E2E2); /* vertical */
-  -webkit-mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-          mask-composite: exclude;
-  mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-  mask-composite: exclude;
-  border-radius: 0.5rem;
+  inset: 0; /* faz ele ocupar a area inteira do pai */
+  padding: 2px;
+  background: linear-gradient(to bottom, #1a1a1a, #E2E2E2);
+  -webkit-mask: /* cria uma máscara */
+    linear-gradient(#fff 0 0) content-box, /* o content box faz com que o gradiente ocupe a area de dentro excluindo o padding */
+    linear-gradient(#fff 0 0); /* cria a máscara branca na posição 0 0 */
+    mask-composite: exclude; /* faz a área da máscara ser invertida, ou seja o padding apareçe e o de dentro some */
+    border-radius: 0.5rem;
 }
 
-
-main {
+.font-lol {
   font-family: "Beaufort for LOL Bold";
+  font-style: italic;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.monda {
+    font-family: 'Monda', sans-serif;
 }
