@@ -30,6 +30,7 @@ header::before { /* cria um pseudo elemento */
     linear-gradient(#fff 0 0); /* cria a máscara branca na posição 0 0 */
     mask-composite: exclude; /* faz a área da máscara ser invertida, ou seja o padding apareçe e o de dentro some */
     border-radius: 0.5rem;
+    z-index: -10;
 }
 
 .font-lol {
